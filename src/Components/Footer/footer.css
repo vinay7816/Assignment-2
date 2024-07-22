@@ -1,0 +1,60 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.moving-footer {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    width: 80vw;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .left-to-right,
+  .right-to-left {
+    position: absolute;
+    white-space: nowrap;
+   
+  }
+  
+  .left-to-right {
+    animation: leftToRight 10s linear infinite;
+    left: -100%;
+    padding-top: 10px;
+  }
+  
+  .right-to-left {
+    animation: rightToLeft 10s linear infinite;
+    right: -100%;
+    padding-bottom: 10px;
+  }
+  
+  @keyframes leftToRight {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  @keyframes rightToLeft {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  
